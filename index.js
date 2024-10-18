@@ -1,9 +1,13 @@
-function impaPar(numero){
-    if(numero % 2 == 0)
-    {
-        alert("é um numero par")
+function bhaskara(numero){
+    const delta = b * b - 4 * a * c
+    
+    if(delta < 0){
+        alert("a equação não possui raiz")
+        return
     }
-    else{
-        alert("é um numero impar")
-    }
+
+    const x1 = (-b + Math.sqrt(delta)) / (2 * a);
+    const x2 = (-b + Math.sqrt(delta)) / (2 * a);
+
+    alert('X1: ${x1} e X2: ${x2}')
 }
